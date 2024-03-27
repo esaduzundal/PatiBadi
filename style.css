@@ -1,0 +1,268 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    background: #8a0984 !important;
+}
+
+.bg-dark {
+    background: #8a0984 !important;
+}
+
+.container {
+    position: relative;
+}
+
+.diagonal-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.diagonal-image {
+    width: 242px;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pt-5 {
+    padding-top: 3rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.px-4 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+
+
+@media (min-width: 768px) { 
+    .card-img-top {
+        height: 32vh;
+    }
+}
+.card-hover {
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-hover:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.5s ease; /* Eski boyutuna dönerken geçiş süresi uzatıldı */
+}
+
+
+.diagonal-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.nav-item:hover .nav-link {
+    color: #ffc107; 
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1); 
+}
+
+.btn.btn-primary.btn-lg:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+footer:hover {
+    color: #ffc107;
+}
+
+.logo {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+.diagonal-images .left-image:hover {
+    transform: rotate(-5deg); 
+}
+
+.diagonal-images .right-image:hover {
+    transform: rotate(5deg); 
+}
+
+.social-media-icons {
+    font-size: 24px;
+}
+
+.social-media-icons a {
+    color: #faf8f8;
+    margin-right: 10px;
+}
+
+.social-media-icons a:hover .fab.fa-instagram {
+    color: #f900c7;
+}
+
+.social-media-icons a:hover .fab.fa-tiktok {
+    color: #000;
+}
+
+.social-media-icons a:hover .fab.fa-facebook {
+    color: #1877f2;
+}
+
+.social-media-icons a:hover .fab.fa-xing {
+    color: #000000; /* Renk Kodu Değiştirildi */
+}
+
+.social-media-icons a:hover .fab.fa-youtube {
+    color: #ff0000;
+}
+
+.social-media-icons a:hover .fab.fa-whatsapp {
+    color: #00ff40;
+}
+/* Düzeltilmiş Kodlar */
+/* İkon boyutunu küçültmek için */
+.fab.fa-whatsapp.fa-2x {
+    font-size: 1.7rem; /* İstediğiniz boyuta ayarlayabilirsiniz */
+}
+
+
+/* Daha az tekrar için .nav-link:hover'ı kullanın */
+.nav-link:hover {
+    color: #ffc107;
+}
+
+.header-content h1,
+.header-content p {
+    color: white;
+}
+
+    
+.download-button-container {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Form konteyneri */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review .box-container {
+    display: flex; /* Kutuları yan yana yerleştir */
+    flex-wrap: wrap; /* Kutular sığmazsa alt satıra geç */
+    justify-content: space-between; /* Yatay boşlukları eşit şekilde dağıt */
+}
+
+.review .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 1rem, 0;
+    background-color: #fff;
+    border-radius: 3rem;
+}
+
+
+.review .box-container .box .user {
+   height: 5rem;
+   weight: 5rem;
+   border-radius: 40%;
+   object-fit: cover;
+}
+
+.review .box-container .box h3{
+   padding: 1rem, 0;
+   font-size: 1rem;
+   color: #f900c7;
+ }
+
+ .review .box-container .box .stars i {
+    font-size: 15px;
+    color: #ffc107;
+    
+  }
+
+  .box {
+    border: 1px solid #ccc; /* Çerçeve kalınlığı ve rengi */
+    border-radius: 5px; /* Köşe yuvarlama */
+    padding: 10px; /* İç boşluk */
+    margin: 0 5px; /* Kenar boşluğu */
+    flex: 0 0 calc(33.33% - 10px); /* Yorum kutularının genişliği (marginlar dahil) */
+    box-sizing: border-box; /* Kenarlık ve dolgu dahil genişlik hesaplaması */
+}
+
+.title-container {
+    text-align: center; /* Başlık ortalanacak */
+}
+
+.box-container {
+    display: flex; /* Kutuları yan yana yerleştir */
+    flex-wrap: wrap; /* Kutular sığmazsa alt satıra geç */
+}
+
+.heading {
+    margin-top: 0; /* Başlık üst boşluğu */
+}
+
+.review {
+    max-width: 1000px; /* İçeriğin maksimum genişliği */
+    margin: 0 auto; /* Ortalama */
+    padding: 20px; /* Kenar boşluğu */
+}
+
+.kaplama {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.kaplama video {
+    min-width: 100%;
+    min-height: 100%;
+}
