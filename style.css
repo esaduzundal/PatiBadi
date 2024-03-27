@@ -172,7 +172,7 @@ footer:hover {
     
 .download-button-container {
     position: absolute;
-    top: 80%;
+    top: 84%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -205,7 +205,7 @@ footer:hover {
 
 .review .box-container .box .user {
    height: 5rem;
-   weight: 5rem;
+   width:  5rem;
    border-radius: 40%;
    object-fit: cover;
 }
@@ -265,4 +265,11 @@ footer:hover {
 .kaplama video {
     min-width: 100%;
     min-height: 100%;
+}
+.social-media-icons a:hover[href*="patibadi.app"] .fab.fa-app-store {
+    color: #007bff; /* Mavi renk */
+}
+
+.social-media-icons a:hover[href*="google"] .fab.fa-google-play {
+    color: #28a745; /* Yeşil renk */
 }
