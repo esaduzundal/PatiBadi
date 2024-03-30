@@ -3,11 +3,11 @@ body {
 }
 
 .navbar {
-    background: #8a0984 !important;
+    background: #8a0909 !important;
 }
 
 .bg-dark {
-    background: #8a0984 !important;
+    background: #ec0808 !important;
 }
 
 .container {
@@ -172,7 +172,7 @@ footer:hover {
     
 .download-button-container {
     position: absolute;
-    top: 84%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -206,7 +206,7 @@ footer:hover {
 .review .box-container .box .user {
    height: 5rem;
    width:  5rem;
-   border-radius: 40%;
+   border-radius: 50%;
    object-fit: cover;
 }
 
@@ -273,3 +273,81 @@ footer:hover {
 .social-media-icons a:hover[href*="google"] .fab.fa-google-play {
     color: #28a745; /* Yeşil renk */
 }
+/* Kart kutuları için hover efekti */
+.box {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+/* Kart içeriği için hover efekti */
+.box:hover p {
+    color: #333; /* Yazı rengini değiştirebilirsiniz */
+}
+
+.box:hover .stars i {
+    color: gold; /* Yıldız rengini değiştirebilirsiniz */
+}
+/* Tabletler için */
+@media (max-width: 991.98px) {
+    .diagonal-images {
+        display: none; /* Diagonal resimler tabletlerde görünmeyecek */
+    }
+
+    .header-content {
+        padding-top: 2rem; /* Başlık alanı üst boşluğunu azalt */
+    }
+}
+
+/* Telefonlar için */
+@media (max-width: 767.98px) {
+    .navbar-nav {
+        flex-direction: column; /* Menü öğelerini dikey olarak sırala */
+        align-items: center; /* Öğeleri merkeze hizala */
+    }
+
+    .navbar-toggler {
+        margin-bottom: 1rem; /* Menü açma butonunun alt boşluğunu artır */
+    }
+
+    .diagonal-images {
+        display: none; /* Diagonal resimler telefonlarda görünmeyecek */
+    }
+
+    .header-content {
+        padding-top: 1rem; /* Başlık alanı üst boşluğunu azalt */
+    }
+
+    .download-button-container {
+        top: 80%; /* İndirme butonunu daha aşağıya al */
+    }
+}
+
+/* Genel */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background: #8a0984 !important;
+}
+
+.bg-dark {
+    background: #8a0984 !important;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px; /* Geniş ekranlar için maksimum genişlik */
+    margin: 0 auto; /* Ortalama */
+    padding: 0 15px; /* Kenar boşluğu */
+}
+
